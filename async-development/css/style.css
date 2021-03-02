@@ -1,0 +1,147 @@
+body {
+    font-family: "PT Sans", "OpenSans", sans-serif;
+    height: 110vh;
+    background-image: url("../img/sky.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 0;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.weather {
+    width: 100%;
+    padding: 60px 10px;
+}
+
+.form {
+    text-align: center;
+}
+
+.formInput {
+    width: 200px;
+    border: none;
+    border-radius: 3px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.formButton {
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background-color: #40CCA7;
+    padding: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #38aa8c;
+    transition: background-color .5s;
+}
+
+.formButton:active {
+    background-color: #40CCA7;
+    transition: 0s;
+    top: .1em;
+    left: .1em;
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;;
+}
+
+.weatherTable {
+    text-align: center;
+    margin-top: 80px;
+    padding: 30px;
+}
+
+.weatherTable img {
+    border-radius:30px;
+}
+
+.weatherTable h1 {
+    font-weight: 700;
+    font-size: 80px;
+    color: #40CCA7;
+    margin-top: 30px;
+}
+
+.weatherTable h4 {
+    margin-top: 10px;
+}
+
+.weatherTable table {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.weatherTable table td {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 590px) {
+    .formInput {
+        width: 150px;
+    }
+
+    .weatherTable h1 {
+        font-size: 70px;
+        margin-top: 50px;
+    }
+
+    .weatherTable table td {
+        font-size: 17px;
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .form {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .formInput {
+        margin-left: 4px;
+    }
+
+    .formButton {
+        margin-left: 5px;
+    }
+
+    .weatherTable table td {
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 394px) {
+    .formButton {
+        margin-top: 10px;
+    }
+
+    .weatherTable {
+        margin-top: 50px;
+    }
+
+    .weatherTable h1 {
+        font-size: 50px;
+        margin-top: 30px;
+    }
+
+    .weatherTable h4 {
+        font-size: 15px;
+    }
+
+    .weatherTable table td {
+        font-size: 13px;
+        padding: 10px 7px;
+    }
+}

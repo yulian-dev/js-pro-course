@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--  Fonts & Icons  -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/sunny_png.png" type="image/png">
+    <!--  Style  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <!--  Title  -->
+    <title>The Weather</title>
+</head>
+<body>
+<section class="weather">
+    <div class="container">
+        <form class="form" name="weatherSearch">
+            <label>
+                <input class="formInput" type="text" name="city" placeholder="Enter your city here...">
+            </label>
+            <label>
+                <input class="formInput" type="text" name="country" placeholder="Enter your country here...">
+            </label>
+            <input class="formButton" type="submit">
+        </form>
+        <div id="weather-table" class="weatherTable"></div>
+    </div>
+</section>
+<script src="./js/main.js"></script>
+</body>
+</html>
