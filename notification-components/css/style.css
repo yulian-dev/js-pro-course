@@ -50,34 +50,35 @@
 }
 .pagination li {
     flex: 1;
-    margin: 0px 4px;
+    margin: 0px 2px;
     border-radius: 3px;
-    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.15);
-    cursor: pointer;
 }
-.pagination li a {
-    font-size: 11px;
+.pagination li button {
+    font-size: 9px;
     text-align: center;
     text-decoration: none;
     color: #4d3252;
-    height: 21px;
+    height: 25px;
     display: block;
     line-height: 21px;
+    border: none;
+    border-radius: 2px;
 }
-.pagination li:first-child a {
+
+.pagination li:first-child button {
     width: 44px;
 }
-.pagination li:last-child a {
+
+.pagination li:last-child button {
     width: 30px;
 }
-.pagination li.active {
-    box-shadow: inset -3px -3px 7px #ffffff73,
-    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+
+.pagination li.active button {
+    font-size: 10px;
+    font-weight: bold;
+    color: #555555;
 }
-.pagination li.active a {
-    font-size: 11px;
-    color: brown;
-}
+
 .pagination li:first-child {
     margin: 0 15px 0 0;
 }

@@ -19,10 +19,10 @@ export async function getData() {
                                             <div>
                                                 <div class="container">
                                                     <ul class="pagination">
-                                                        <li><a id="tipPrevious" href="#">Previous</a></li>
+                                                        <li><button id="tipPrevious">Prev</button></li>
                                                         ${tips.map(tip => `<li value="${tip.id}" class="tipNumber">
-                                                            <a href="#">${tip.id}</a></li>`).join('')}
-                                                        <li><a id="tipNext" href="#">Next</a></li>
+                                                            <button>${tip.id}</button></li>`).join('')}
+                                                        <li><button id="tipNext">Next</button></li>
                                                     </ul>
                                                 </div>
                                             </div>
