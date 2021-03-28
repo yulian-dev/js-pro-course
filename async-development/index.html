@@ -6,6 +6,9 @@
     <!--  Fonts & Icons  -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous"/>
     <link rel="shortcut icon" href="img/sunny_png.png" type="image/png">
     <!--  Style  -->
     <link rel="stylesheet" href="css/style.css">
@@ -14,6 +17,16 @@
     <title>The Weather</title>
 </head>
 <body>
+
+<!-- Header -->
+<header id="header">
+    <nav class="headerNav">
+        <a id="myLocation" href="#">My location</a>
+        <a id="history" href="#">History</a>
+    </nav>
+</header>
+
+<!-- Weather Section -->
 <section class="weather">
     <div class="container">
         <form class="form" name="weatherSearch">
@@ -25,9 +38,13 @@
             </label>
             <input class="formButton" type="submit">
         </form>
-        <div id="weather-table" class="weatherTable"></div>
+        <div id="weatherTable" class="weatherTable"></div>
     </div>
 </section>
+
+<!-- Modal Box -->
+<section id="modalBox"></section>
+
 <script src="./js/main.js"></script>
 </body>
 </html>
