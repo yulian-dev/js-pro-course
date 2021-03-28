@@ -1,0 +1,106 @@
+.notificationPage {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.notification {
+    width: 350px;
+    padding: 15px 15px 10px 15px;
+    margin: 20px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.notificationCard {
+    display: flex;
+    flex-direction: row;
+}
+
+.notificationText {
+    padding: 10px;
+}
+
+.notificationText h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.notificationCloseButton {
+    display: block;
+    cursor: pointer;
+}
+
+.notificationCloseButton:hover {
+    color: brown;
+}
+
+/* Pagination */
+
+.container {
+    padding : 5px 0 10px 5px;
+    border-radius: 3px;
+    text-align: right;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+}
+.pagination li {
+    flex: 1;
+    margin: 0px 2px;
+    border-radius: 3px;
+}
+.pagination li button {
+    font-size: 9px;
+    text-align: center;
+    text-decoration: none;
+    color: #4d3252;
+    height: 25px;
+    display: block;
+    line-height: 21px;
+    border: none;
+    border-radius: 2px;
+}
+
+.pagination li:first-child button {
+    width: 44px;
+}
+
+.pagination li:last-child button {
+    width: 30px;
+}
+
+.pagination li.active button {
+    font-size: 10px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.pagination li:first-child {
+    margin: 0 15px 0 0;
+}
+.pagination li:last-child {
+    margin: 0 0 0 15px;
+}
+
+/* Disable Tips */
+
+.disableTips {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.disableTips input {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.disableTips span {
+    font-size: 14px;
+    padding: 3px 0 0 3px;
+}
+
