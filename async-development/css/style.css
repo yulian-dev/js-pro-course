@@ -167,6 +167,29 @@ body {
     cursor: pointer;
 }
 
+@media screen and (max-width: 1440px) {
+    .modalContent {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .modalContent {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .modalContent {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .modalContent table td {
+        padding: 0.5rem;
+    }
+}
+
 @media screen and (max-width: 590px) {
     body {
         height: 110vh;
@@ -184,6 +207,10 @@ body {
     .weatherTable table td {
         font-size: 17px;
         padding: 10px 15px;
+    }
+
+    .modalContent table td:nth-child(even) {
+        display: none;
     }
 }
 
