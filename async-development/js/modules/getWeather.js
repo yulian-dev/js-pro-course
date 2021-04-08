@@ -1,10 +1,10 @@
 import {saveToLocalstorage} from "./saveToLS.js";
+import {getWeatherData} from "./getWeatherDataFromApi.js";
 
 const weatherTable = document.querySelector('#weatherTable');
 
 export async function getWeather(firstParam, secondParam) {
-    const response = await fetch(`http://api.weatherstack.com/current?access_key=521b1a89bf347be2a638b8d595ca0ff2&query=${firstParam}, ${secondParam}`);
-    const data = await response.json();
+    const data = getWeatherData(firstParam, secondParam);
     const {current, location} = data;
 
     weatherTable.innerHTML = `<img class="weatherImg" src="${current.weather_icons[0]}" alt="Weather">
