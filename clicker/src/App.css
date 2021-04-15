@@ -1,0 +1,76 @@
+.clicker {
+    height: 300px;
+    width: 300px;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.clicker-display {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F9FA;
+}
+
+.clicker-display h1 {
+    font-size: 80px;
+    color: #555555;
+    margin: 0;
+}
+
+.clicker-btn {
+    height: 100px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.clicker-btn li {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.clicker-btn li:first-child {
+    background-color: #28A745;
+}
+
+.clicker-btn li:first-child:hover {
+    background-color: #1E8634;
+    transition: .3s linear;
+}
+
+.clicker-btn li:nth-child(2) {
+    background-color: #FFC106;
+}
+
+.clicker-btn li:nth-child(2):hover {
+    background-color: #DCA504;
+    transition: .3s linear;
+}
+
+.clicker-btn li:last-child {
+    background-color: #DC3445;
+}
+
+.clicker-btn li:last-child:hover {
+    background-color: #BB2C39;
+    transition: .3s linear;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: 2em;
+    color: #F8F9FA;
+}
+
+.svg-inline--fa {
+    height: 2em;
+}
